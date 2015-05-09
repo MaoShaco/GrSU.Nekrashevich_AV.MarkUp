@@ -1,0 +1,10 @@
+<!--
+//	Now The validation is ok with xml, i hope now its ok for u too =) 
+-->
+
+<!ELEMENT item ( #PCDATA ) >
+<!ATTLIST item href NMTOKEN #REQUIRED >
+<!ELEMENT menu ( item+, submenu ) >
+<!ELEMENT subitem ( #PCDATA ) >
+<!ATTLIST subitem href NMTOKEN #REQUIRED >
+<!ELEMENT submenu ( subitem+ ) >

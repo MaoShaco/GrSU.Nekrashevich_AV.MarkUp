@@ -1,0 +1,21 @@
+<!--
+	 I haven't been at webinar today cuz i have been in our BEST belTelecom center which broke my inet connection
+	 they said now there is an optic fiber at ur flat and we have to discontract with old featured systems,
+	now i dont have inet and telephone at home at all its look like i leave in cave...
+	P.S. i have a special comment for u in every doc =)
+	BestRegard Andrew
+-->
+
+<?xml version="1.0"?>
+<menu>
+		<item href="main.html">Title</item>
+		<item href="among_rest.html">Agency</item>
+		<item href="games.html">Games</item>
+		<item href="series.html">Series</item>
+		<submenu>
+			<subitem href="dofus.html">Dofus</subitem>
+			<subitem href="dofus_arena.html">KrosMaster</subitem>
+			<subitem href="wakfu.html">Wakfu</subitem>
+			<subitem href="wakfu_islands.html">Islands</subitem>
+		</submenu>	
+</menu>

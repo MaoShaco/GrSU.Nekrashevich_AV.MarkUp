@@ -1,0 +1,165 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em; 
+	background-color: #36100c;
+	background-repeat: repeat-x;
+	background-position: top center;
+}
+.cleaner { clear: both }
+.float_l { float: left }
+.float_r { float: right }
+
+
+
+.image_wrapper { 
+	display: inline-block; 
+	border: 1px solid #ccc; 
+	padding: 2px; 
+	background: #36100c; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 20px 0 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 0 20px; 
+}
+
+
+#ankama_body_main {
+	width: 100%;
+	background:  url(../images/tooplate_body.jpg) center top no-repeat;
+}
+
+#ankama_main {
+	width: 800px;
+	margin: 0 auto;
+	background:  url(../images/tooplate_body.jpg) center top no-repeat;
+}
+
+#ankama_header {
+	width: 750px;
+	height: 50px;
+	padding: 40px 20px 10px;
+}
+
+#site_title { 
+	float: left; 
+}
+
+#site_title h1 a { 
+	display: block; 
+	width: 195px; 
+	height: 46px; 
+	background: url(../images/tooplate_logo.png)  no-repeat top left; 
+	color: #fff; 
+	font-size: 40px; 
+	font-weight: 400; 
+	outline: none; 
+	text-indent: -10000px; 
+}
+
+/* menu */
+
+#ankama_menu { 
+	float: right; 
+	margin-top: 10px; 
+}
+
+#ankama_menu ul { 
+	padding: 0; 
+	margin: 0; 
+	list-style: none; 
+}
+
+#ankama_menu ul li { 
+	margin: 0; 
+	padding: 0; 
+	display: inline-block; 
+}
+
+#ankama_menu ul li a {
+	float: left;
+	display: block;
+	width: 105px;
+	height: 33px;
+	line-height: 29px;
+	font-size: 14px;
+	color: #fff;	
+	margin-left: 2px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 700;
+	outline: none;
+}
+
+#ankama_menu ul li > ul{
+	display: none;
+}
+
+#ankama_menu ul li:hover 
+{
+	position: ;
+}
+
+#ankama_menu ul li:hover > ul
+{
+	display: block;
+}
+
+#ankama_menu ul li:hover ul
+{
+	position: absolute;
+	top: 80px;
+	left: 50%;
+}
+#ankama_menu ul li a:hover, #tooplate_menu ul .current {
+	color: #36100c;
+	background: url(../images/tooplate_menu_hover.png) no-repeat center center;
+}
+
+.content_box { 
+	clear: both; 
+	width: 800px; 
+}
+
+.content_title { 
+	width: 700px; 
+	height: 30px; 
+	padding: 15px 50px; 
+}
+
+.content_ct {  
+	background: url(../images/tooplate_ct.png); 
+}
+
+.content { 
+	padding: 30px 50px; 
+	background: url(../images/tooplate_content.png) repeat-y; 
+}
+
+.content_bottom { 
+	width: 800px; 
+	height: 49px; 
+	padding-top: 20px;  
+}
+
+.content_cb { 
+	background: url(../images/tooplate_gototop_bg.png); 
+}
+ 
+.post_box img { 
+	float: left; 
+	margin-right: 15px; 
+	width: 300px; 
+	height: 100px; 
+	padding-bottom: 11px; 
+	background: url(../images/tooplate_post_img_bg.jpg) no-repeat; 
+}
