@@ -11,30 +11,14 @@
   <body>
   
 <span id="top"></span>
-<div id="ankama_body_main">
-<div id="ankama_main">
-	<div id="ankama_header">
-        <div id="site_title">
-            <h1><a href="#">Blue</a></h1>
-        </div>
-        <div id="ankama_menu">
-            <ul>
-                <li><a href="main.html">Title</a></li>
-                <li><a href="among rest.html">Agency</a></li>
-                <li><a href="games.html">Games</a>
-				<ul>
-					<li><a href="dofus.html">Dofus</a></li>
-					<li><a href="dofus arena.html">KrosMaster</a></li>
-					<li><a href="wakfu.html">Wakfu</a></li>
-					<li><a href="wakfu islands.html">Islands</a></li>
-				</ul>
-				</li>
-                <li><a href="series.html">Series</a></li>
-            </ul>				
-        </div> 
-	</div> 
-      	<div class="content_box">
-  <h2>Classes in Wakfu</h2>
+<div align="center" id="ankama_body_main">
+<div id="menu">
+<script type="text/javascript" src="js/menu.js"></script>
+</div>
+        <div id="Agency" class="content_top"></div>
+    	<div class="content_box">
+        	<div class="content_title content_ct" align="center"><h2>Classses</h2></div>
+            <div class="content">
     <table border="1">
       <tr bgcolor="blue">
         <th>Name</th>
