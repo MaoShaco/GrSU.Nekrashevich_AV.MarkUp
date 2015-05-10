@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<menu>
+  <item id="0">
+    <name>Title</name>
+    <link>main.html</link>
+	<subItems></subItems>
+  </item>
+
+  <item id="1">
+    <name>Agency</name>
+    <link>among rest.html</link>
+    <subItems></subItems>
+  </item>
+
+  <item id="2">
+    <name>Games</name>
+    <link>games.html</link>
+	<subItems>
+      <subItem id="0">
+        <name>Dofus</name>
+        <link>dofus.html</link>
+      </subItem>
+      <subItem id="1">
+        <name>KrosMaster</name>
+        <link>dofus arena.html</link>
+      </subItem>
+      <subItem id="2">
+        <name>Wakfu</name>
+        <link>wakfu.html</link>
+      </subItem>
+	  <subItem id="3">
+        <name>Islands</name>
+        <link>wakfu islands.html</link>
+      </subItem>
+	  <subItem id="4">
+        <name>Classes</name>
+        <link>classes.xml</link>
+      </subItem>
+    </subItems>
+  </item>
+
+  <item id="3">
+    <name>Series</name>
+    <link>series.html</link>
+    <subItems></subItems>
+  </item>
+</menu>
