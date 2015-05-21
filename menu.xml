@@ -49,7 +49,7 @@
   </item>
   <item id="4">
     <name>Registration</name>
-    <link>"registration.html"</link>
+    <link>"index.html"</link>
     <subItems></subItems>
   </item>
 </menu>
