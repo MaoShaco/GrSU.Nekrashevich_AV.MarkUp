@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <head>
-<title>Ankama</title>
+    <title>Ankama</title>
 
 <link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-
+    <script type="text/javascript" src="js/Load.js">
+</script>	
 </head>
 <body>
 
-<span id="top"></span>
-<div align="center" id="ankama_body_main">
-<div id="menu">
-<script type="text/javascript" src="js/menu.js"></script>
-</div>   
-        <div id="Series" class="content_top"></div>
-    	<div class="content_box">
-        	<div class="content_title content_ct" align="center"><h2> Game</h2></div>
-            <div class="content">
-  
-		<div>					
-		
-		
-		<div align="center" >
-				<iframe src="classes.xml" width="450" height="500">
-				</iframe>
-		</div>
-		
-		
-		
-                    <div class="cleaner"></div>
-		</div>
-                <div class="cleaner"></div>
-		</div>
-</div>
-<div class="content_bottom content_cb"></div>
-</div> 
+    <span id="top"></span>
+    <div align="center" id="ankama_body_main">
+        <div id="ankama_main">
+            <div id="ankama_header">
+                <div id="site_title">
+                    <h1><a href="#">Blue</a></h1>
+                </div>
+                <div id="ankama_menu">
+                    <script>loadXmlMenu()</script>
+                </div>
+            </div>
+        </div>
+
+
+        <div align="center">
+            <iframe src="classes.xml" width="450" height="500"></iframe>
+        </div>
+
+
+
+        <div class="cleaner"></div>
+    </div>
+    <div class="cleaner"></div>
+
+    <div class="content_bottom content_cb"></div>
+
+
 </body>
 </html>

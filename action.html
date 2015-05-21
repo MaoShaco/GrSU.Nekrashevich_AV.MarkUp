@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
+    <script type="text/javascript">
+
+        function getDaysBeforeBirthday(date) {
+            var www = 86400000; //fron milliseconds to days
+            var birth = date.split('-');
+
+            var now = new Date();
+            var birthday = new Date(birth[1] + " " + birth[2] + " " + now.getFullYear()); //"MM DD YYYY 00:00:00"
+
+            var remaining = birthday - now;
+
+            if ((remaining = Math.floor(remaining / www) + 1) < 0) {
+                birthday.setFullYear(new Date().getFullYear() + 1);
+                remaining = birthday - now;
+                return Math.floor(remaining / www) + remaining;
+            }
+
+            return remaining;
+        }
+
+
+        function getInfo() {
+            var data = location.search.substring(1).split('&');
+            var name = data.shift();
+
+            document.write("<div class='shadow'><h2> Hello, " + name.split('=')[1] + "</h2>");
+
+            while (splitArray = data.shift()) {
+                splitArray = splitArray.split('=');
+
+                if (splitArray[0] === "lname") {
+                    document.write("<p>Last Name : " + splitArray[1] + "</p>");
+                }
+
+                if (splitArray[0] === "email") {
+                    document.write("<p>Email : " + splitArray[1].replace("%40", "@") + "</p>");
+                }
+
+                if (splitArray[0] === "country") {
+                    document.write("<p>Country : " + splitArray[1] + "</p>");
+                }
+
+                if (splitArray[0] === "passwordX") {
+                    document.write("<p>Password : " + splitArray[1] + "</p>");
+                }
+
+                if (splitArray[0] === "birthday") {
+                    document.write("<p> Birthday: " + splitArray[1] + "</p> <p> Days before birthday : " + getDaysBeforeBirthday(splitArray[1]) + "</p>");
+                }
+            }
+            document.write("</div>");
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        getInfo();
+    </script>
+</body>
+</html>

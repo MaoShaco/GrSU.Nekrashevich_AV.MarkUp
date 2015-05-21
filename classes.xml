@@ -1,100 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type='text/xsl' href='classes.xsl'?>
 <Classes>
-	<Class>
+	<Class power = "145">
 		<name>Feca</name>
 		<element>Water</element>
 		<type>Support</type>
-		<power>111</power>
 	</Class>
-	<Class>
+	<Class power = "133">
 		<name>Osamodas</name>
 		<element>Fire</element>
 		<type>Specialist</type>
-		<power>112</power>
 	</Class>
-	<Class>
+	<Class power = "123">
 		<name>Enutrof</name>
 		<element>Earth</element>
 		<type>Warrior</type>
-		<power>113</power>
 	</Class>
-	<Class>
+	<Class  power = "168">
 		<name>Sram</name>
 		<element>Air</element>
 		<type>Rogue</type>
-		<power>114</power>
 	</Class>
-	<Class>
+	<Class power = "119">
 		<name>Xelor</name>
 		<element>Fire</element>
 		<type>Rogue</type>
-		<power>115</power>
 	</Class>
-	<Class>
+	<Class power = "111">
 		<name>Ecaflip</name>
 		<element>Earth</element>
 		<type>Specialist</type>
-		<power>116</power>
 	</Class>
-	<Class>
+	<Class power = "113">
 		<name>Eniripsa</name>
 		<element>Water</element>
 		<type>Support</type>
-		<power>117</power>
 	</Class>
-	<Class>
+	<Class power = "122">
 		<name>Iop</name>
 		<element>Air</element>
 		<type>Warrior</type>
-		<power>119</power>
 	</Class>
-	<Class>
+	<Class power = "118">
 		<name>Cra</name>
 		<element>Air</element>
 		<type>Rogue</type>
-		<power>118</power>
 	</Class>
-	<Class>
+	<Class power = "135">
 		<name>Sadida</name>
 		<element>Earth</element>
 		<type>Specialist</type>
-		<power>135</power>
+
 	</Class>
-	<Class>
+	<Class power = "124">
 		<name>Sacrier</name>
 		<element>Fire</element>
 		<type>Warrior</type>
-		<power>119</power>
 	</Class>
-	<Class>
+	<Class power = "137">
 		<name>Pandawa</name>
 		<element>Water</element>
 		<type>Specialist</type>
-		<power>120</power>
 	</Class>
-	<Class>
+	<Class power = "117">
 		<name>Rogue</name>
 		<element>Fire</element>
 		<type>Rogue</type>
-		<power>121</power>
 	</Class>
-	<Class>
+	<Class  power = "180">
 		<name>Masqueraider</name>
 		<element>Air</element>
 		<type>Specialist</type>
-		<power>122</power>
 	</Class>
-	<Class>
+	<Class power = "112">
 		<name>Foggernaut</name>
 		<element>Earth</element>
 		<type>Warrior</type>
-		<power>123</power>
 	</Class>
-	<Class>
+	<Class power = "143">
 		<name>Eliotrope</name>
 		<element>Water</element>
 		<type>Specialist</type>
-		<power>124</power>
 	</Class>
 </Classes>

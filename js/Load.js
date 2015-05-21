@@ -16,8 +16,8 @@ function loadXMLDoc(filename) {
 }
 
 function displayResult() {
-    xml = loadXMLDoc("classes.xml");
-    xsl = loadXMLDoc("classes.xsl");
+    xml = loadXMLDoc("classesframe.xml");
+    xsl = loadXMLDoc("classes.xslt");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         ex = xml.transformNode(xsl);
@@ -56,7 +56,7 @@ function loadXmlMenu() {
     xmlhttp.open("GET", "menu.xml", false);
     xmlhttp.send();
     if (xmlhttp.status === 200) {
-        var dat = document.getElementById("header");
+        var dat = document.getElementById("ankama_menu");
         var xml = xmlhttp.responseXML.documentElement;
         var str = "<ul class='menu'>";
         var listNames = xml.getElementsByTagName("name");

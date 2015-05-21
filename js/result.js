@@ -8,7 +8,7 @@
 	
 	
 	
-	document.write("Hello, <strong> " + name[5]+name[6]+name[7]+name[8]+name[9]+ "</strong>!");
+	document.write("Hello, <strong> " + name.replace("name,","") + "</strong>!");
 	
 	var i = 0;
 	var values= new Array(); 
