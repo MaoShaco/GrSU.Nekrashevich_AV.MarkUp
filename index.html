@@ -1,13 +1,26 @@
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-<title>Javascript</title>
-<link href="css/tooplate_style.css" rel="stylesheet" type="text/css" />
-<script src="js/calendar.js" type="text/javascript"></script>
-<script src="js/check.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/Load.js">
-</script>	
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/tooplate_style.css">
 
+    <script>
+        function checkPasswords() {
+            if (document.getElementById('passwordX').value !== document.getElementById('passwordY').value) {
+                alert('Passwords do not match!');
+                return false;
+            } else {
+
+                return true;
+            }
+        }
+    </script>	
+    <script type="text/javascript" src="js/Load.js">   
+    </script>
 </head>
+
+
 <body>
   <span id="top"></span>
 <div align="center" id="ankama_body_main">
@@ -25,58 +38,49 @@
        
         <div id="Agency" class="content_top"></div>
     	<div class="content_box">
-        	<div class="content_title content_ct" align="center"><h2>Ankama among the other companies and Agencies.</h2></div>
+        	<div class="content_title content_ct" align="center"><h2>Registration</h2></div>
             <div class="content">
-            <fieldset>
-			<legend>Regestration</legend>	
-			<form name="form1" action="next.html" method="GET" onsubmit="return check(this);">
-				<div class="table">
-				<div class="Field">Name<span style="color:#E60000">*</span>:</div>
-				<div class="TextField"><input style="color:#2D2F47" name="name" /></div>
-				
-				<div class="Field">Second Name<span style="color:#E60000">*</span>:</div>
-				<div class="TextField"><input style="color:#2D2F47" name="surname" /></div>
-				
-				<div class="Field">Password<span style="color:#E60000">*</span>:</div>
-				<div class="TextField"><input style="color:#2D2F47" name="password" type="password"/></div>
-				
-				<div class="Field">Sumbit Password<span style="color:#E60000">*</span>:</div>
-				<div class="TextField"><input style="color:#2D2F47" name="rpassword" type="password"/></div>
-				
-				<div class="Field">Email<span style="color:#E60000">*</span>:</div>
-				<div class="TextField"><input style="color:#2D2F47" name="mail" /></div>
-				
-				<div class="Field">Sex:</div>
-				<div class="TextField">
-					<br><input name="sex" value="man" type="radio"  checked="checked"> Man
-					<input name="sex" value="girl" type="radio">Women<br/>
-				</div>
+                    <form action="action.html" method="get" id="registration" name="registration" onsubmit="return checkPasswords()">
+            <p>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" title="only english letters" pattern="[A-Za-z\s]+$" required /><span></span>
+            </p>
+            <p>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" title="only english letters" pattern="[A-Za-z\s]+$" required /><span></span>
+            </p>
+            <p>
+                <label for="birthday">Date of birth</label>
+                <input type="date" id="birthday" name="birthday" title="Date format: 31-12-1990" required /><span></span>
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" title="example@grsu.by" placeholder="example@grsu.by" pattern="^((([\w]+\.[\w]+)+)|([\w]+))@(([\w]+\.)+)([A-Za-z]{2,3})$" required /><span></span>
+            </p>
 
-				<div class="Field">Date of Birth<span style="color:#E60000">*</span>:</div>
-				<div class="TextField"><input name="birth" style="color:#2D2F47" value="Date of your birth..." onfocus="this.select();lcs(this)" onclick="event.cancelBubble=true;this.select();lcs(this)"/></div>
-				
-				<div class="Field">Country:</div>
-					<div class="TextField">
-						<select name="country" style="color:#2D2F47">
-								 <option value="Armenia">Armenia</option>
-								 <option value="Belarus">Belarus</option>
-								 <option value="Finland">Finland</option>
-								 <option value="Greece">Greece</option>
-								 <option value="Romania">Romania</option>
-								 <option value="Russia">Russia</option>
-								 <option value="Ukraine">Ukraine</option>
-						</select>
-					</div>
-				</div>
-				<div class="left_button">
-					<button type="reset"><img src="img/reset.png" alt="Clear" style="vertical-align:middle;height:40px;"></button>
-				</div>
-				<div class="right_button">
-					<button type="submit"><img src="img/send.png" alt="Send" style="vertical-align: middle;height:40px;"></button>
-				</div>
+            <p>
+                <label for="passwordX">Password</label>
+                <input type="password" name="passwordX" id="passwordX" pattern="\w{5,}" title="Five or more characters" required /><span></span>
+            </p>
+            <p>
+                <label for="passwordY">Confirm</label>
+                <input type="password" name="passwordY" id="passwordY" pattern="\w{5,}" title="Five or more characters" required /><span></span>
+            </p>
+			            <p>
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit" id="submit" name="submit" title="Submit">Submit</button>
+                <button type="reset" id="reset" name="reset" title="Reset">Reset</button>
+            </p>
 
-			</form>
-		</fieldset>
+        </form>
                 <div class="cleaner"></div>
             </div>
             
